@@ -21,7 +21,7 @@ $endYear.on('keypress', keyPress);
 
 function keyPress(e)
 {
-     if (e.key === 'Enter') 
+     if (e.key === 'Enter')
      {
        searchStuff();
      }
@@ -29,4 +29,5 @@ function keyPress(e)
 function searchStuff()
 {
      //ajax query
+     console.log('Script loaded properly');
 }

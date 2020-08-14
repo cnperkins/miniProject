@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>New York Times Search</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">New York Times Search</h1>
+        </div>
+    </div>
+    <form>
+        <div class="form-group col-sm-8">
+            <label for="searchTerm">Search Term:</label>
+            <input type="search" class="form-control" id="searchTerm">
+
+        </div>
+        <div class="form-group col-sm-8">
+            <label for="numRecords">Number of Records to Retrieve:</label>
+            <input type="number" class="form-control" id="numRecords">
+        </div>
+        </div>
+        <div class="form-group col-sm-8">
+            <label for="startYear">Start Year (Optional):</label>
+            <input type="number" class="form-control" id="startYear">
+        </div>
+        </div>
+        <div class="form-group col-sm-8">
+            <label for="endYear">End Year (Optional):</label>
+            <input type="number" class="form-control" id="endYear">
+        </div>
+        <button type="search" value="search" class="btn btn-primary" id="search">Search</button>
+        <button type="reset" value="reset" class="btn btn-primary" id="reset">Clear Results</button>
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+
+
+</html>
